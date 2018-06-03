@@ -1,0 +1,81 @@
+body {
+  background-color: rgb(247, 209, 139);
+}
+
+.contributors-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1%;
+
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+  list-style: none;
+}
+
+.repos-info {
+  margin: 3em;
+  text-align: right;
+  color: rgb(219, 77, 21);
+}
+
+.header {
+  background-color: rgb(219, 77, 21);
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  border-radius: 12em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    background-color: rgb(219, 77, 21);
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    border-radius: 12em;
+    text-align: center;
+    box-sizing: content-box;
+    margin: auto;
+    text-align: center;
+  }
+
+  .repos-info {
+    margin: 3em;
+    text-align: right;
+    color: rgb(219, 77, 21);
+  }
+  .contributors-list {
+    text-align: center;
+    list-style: none;
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+  }
+}
+
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  opacity: 0.7;
+  background-color: #fff;
+  z-index: 99;
+  text-align: center;
+}
+
+#loading-image {
+  position: absolute;
+  top: 100px;
+  left: 240px;
+  z-index: 100;
+}
